@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Forth project of Yury Baranov / Yandex.Practicum">
+  <meta name="keywords" content="html, css, adaptive, grid, figma, JavaScript">
+  <meta name="author" content="Yury Baranov">
+  <link rel="stylesheet" href="style.css">
+  <title>Quick Search</title>
+</head>
+<!-- ---------------------------------------------------------------------------------------------------- -->
+<body class="root">
+
+  <div class="page">
+<!-- ---------------------------------------------------------------------------------------------------- -->
+    <header class="header">
+      <!-- <img class="header__logo" src="" alt="Логотип: "> -->
+      <h1 class="header__title">Quick search pannel</h1>
+    </header>
+<!-- ---------------------------------------------------------------------------------------------------- -->
+    <main class="content">
+
+      <section class="section autorization">
+        <div class="grid">
+          <div class="grid-block">
+            <form class="form autorization-form">
+              <p class="form__title">Please enter the system</p>
+              <span class="form__input-capture">Login</span>
+              <input class="form__input login-input" type="text">
+              <span class="form__input-capture">Password</span>
+              <input class="form__input password-input" type="text">
+              <span class="autorization-form__error"></span>
+              <button class="form__button authorization__button" type="submit">Authorize</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="section search-bar">
+        <div class="grid">
+          <div class="grid-block">
+            <form class="form search-form">
+              <p class="form__title">Surname</p>
+              <input class="form__input" type="text">
+              <button class="form__button search-form__button search-form__button_disabled" type="submit" disabled>Search</button>
+            </form>
+          </div>
+          <!-- <div class="option search-bar__tail">
+            <p></p>
+            <input type="text">
+          </div>  -->
+        </div>
+      </section>
+
+      <section class="section list">
+        <div class="list-head">
+          <div class="list-cell-number list-cell-heading"><p class="list-cell-heading__text">No</p></div>
+          <div class="list-cell list-cell-heading list-head__surname"><p class="list-cell-heading__text">Surname</p></div>
+          <div class="list-cell list-cell-heading list-head__name"><p class="list-cell-heading__text">Name</p></div>
+          <div class="list-cell list-cell-heading list-head__date"><p class="list-cell-heading__text">Date</p></div>
+          <div class="list-cell list-cell-heading list-head__tail"><p class="list-cell-heading__text">Tail</p></div>
+          <div class="list-cell list-cell-heading list-head__direction"><p class="list-cell-heading__text">Direction</p></div>
+        </div>
+        <div class="list-body">
+          <textarea class="list-cell-number list-cell-text-area"></textarea>
+          <textarea class="list-cell list-cell-text-area list-body__surname"></textarea>
+          <textarea class="list-cell list-cell-text-area list-body__name"></textarea>
+          <textarea class="list-cell list-cell-text-area list-body__date"></textarea>
+          <textarea class="list-cell list-cell-text-area list-body__tail"></textarea>
+          <textarea class="list-cell list-cell-text-area list-body__direction"></textarea>
+        </div>
+      </section>
+
+    </main>
+<!-- ---------------------------------------------------------------------------------------------------- -->
+    <footer class="footer">
+      <p class="footer__copyright">&copy; 2023. Made by AskJet.</p>
+    </footer>
+<!-- ---------------------------------------------------------------------------------------------------- -->
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
