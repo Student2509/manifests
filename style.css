@@ -2,7 +2,7 @@
 
 .root {
     width: 100%;
-    background-color: black;
+    background-color: #3F8FD2;
     color: white;
 }
 
@@ -158,8 +158,9 @@
 }
 
 .list-cell-text-area {
-    background-color: black;
-    color: white;
+    background-color: #3F8FD2;
+    border-color: black;
+    color: black;
     height: fit-content;
     font-size: 14px;
     line-height: 16px;
